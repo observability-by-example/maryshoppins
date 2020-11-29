@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints
+namespace MaryShoppins.PublicApi.CatalogItemEndpoints
 {
     public class DeleteCatalogItemResponse : BaseResponse
     {

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
+namespace MaryShoppins.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(CatalogContext))]
     [Migration("20180725190153_AddExtraConstraints")]
@@ -22,7 +22,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                 .HasAnnotation("Relational:Sequence:.catalog_type_hilo", "'catalog_type_hilo', '', '1', '10', '', '', 'Int64', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.Basket", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.BasketAggregate.Basket", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,7 +35,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Baskets");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("BasketItem");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogBrand", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.CatalogBrand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("CatalogBrand");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.CatalogItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -102,7 +102,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Catalog");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogType", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.CatalogType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -118,7 +118,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("CatalogType");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -133,7 +133,7 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -152,29 +152,29 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.BasketAggregate.BasketItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate.Basket")
+                    b.HasOne("MaryShoppins.ApplicationCore.Entities.BasketAggregate.Basket")
                         .WithMany("Items")
                         .HasForeignKey("BasketId");
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.CatalogItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogBrand", "CatalogBrand")
+                    b.HasOne("MaryShoppins.ApplicationCore.Entities.CatalogBrand", "CatalogBrand")
                         .WithMany()
                         .HasForeignKey("CatalogBrandId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.CatalogType", "CatalogType")
+                    b.HasOne("MaryShoppins.ApplicationCore.Entities.CatalogType", "CatalogType")
                         .WithMany()
                         .HasForeignKey("CatalogTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Order", b =>
                 {
-                    b.OwnsOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Address", "ShipToAddress", b1 =>
+                    b.OwnsOne("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Address", "ShipToAddress", b1 =>
                         {
                             b1.Property<int?>("OrderId")
                                 .ValueGeneratedOnAdd()
@@ -201,20 +201,20 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
 
                             b1.ToTable("Orders");
 
-                            b1.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order")
+                            b1.HasOne("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Order")
                                 .WithOne("ShipToAddress")
-                                .HasForeignKey("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Address", "OrderId")
+                                .HasForeignKey("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Address", "OrderId")
                                 .OnDelete(DeleteBehavior.Cascade);
                         });
                 });
 
-            modelBuilder.Entity("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
+            modelBuilder.Entity("MaryShoppins.ApplicationCore.Entities.OrderAggregate.OrderItem", b =>
                 {
-                    b.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.Order")
+                    b.HasOne("MaryShoppins.ApplicationCore.Entities.OrderAggregate.Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId");
 
-                    b.OwnsOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "ItemOrdered", b1 =>
+                    b.OwnsOne("MaryShoppins.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "ItemOrdered", b1 =>
                         {
                             b1.Property<int?>("OrderItemId")
                                 .ValueGeneratedOnAdd()
@@ -230,9 +230,9 @@ namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
 
                             b1.ToTable("OrderItems");
 
-                            b1.HasOne("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.OrderItem")
+                            b1.HasOne("MaryShoppins.ApplicationCore.Entities.OrderAggregate.OrderItem")
                                 .WithOne("ItemOrdered")
-                                .HasForeignKey("Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "OrderItemId")
+                                .HasForeignKey("MaryShoppins.ApplicationCore.Entities.OrderAggregate.CatalogItemOrdered", "OrderItemId")
                                 .OnDelete(DeleteBehavior.Cascade);
                         });
                 });

@@ -1,8 +1,8 @@
 ﻿using Xunit;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
 using System;
+using MaryShoppins.ApplicationCore.Entities;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Entities.CatalogItemTests
+namespace MaryShoppins.UnitTests.ApplicationCore.Entities.CatalogItemTests
 {
     public class UpdateDetails
     {

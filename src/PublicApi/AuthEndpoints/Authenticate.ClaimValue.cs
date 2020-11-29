@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Microsoft.eShopWeb.PublicApi.AuthEndpoints
+namespace MaryShoppins.PublicApi.AuthEndpoints
 {
     public class ClaimValue
     {

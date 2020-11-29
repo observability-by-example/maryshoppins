@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Config
+namespace MaryShoppins.Infrastructure.Data.Config
 {
     public class BasketConfiguration : IEntityTypeConfiguration<Basket>
     {

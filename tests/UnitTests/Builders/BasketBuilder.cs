@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+﻿using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
 using Moq;
 
-namespace Microsoft.eShopWeb.UnitTests.Builders
+namespace MaryShoppins.UnitTests.Builders
 {
     public class BasketBuilder
     {

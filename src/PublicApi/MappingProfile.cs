@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.PublicApi.CatalogBrandEndpoints;
-using Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
-using Microsoft.eShopWeb.PublicApi.CatalogTypeEndpoints;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.PublicApi.CatalogBrandEndpoints;
+using MaryShoppins.PublicApi.CatalogItemEndpoints;
+using MaryShoppins.PublicApi.CatalogTypeEndpoints;
 
-namespace Microsoft.eShopWeb.PublicApi
+namespace MaryShoppins.PublicApi
 {
     public class MappingProfile : Profile
     {

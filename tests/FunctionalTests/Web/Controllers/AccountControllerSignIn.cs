@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers
+namespace MaryShoppins.FunctionalTests.Web.Controllers
 {
     [Collection("Sequential")]
     public class AccountControllerSignIn : IClassFixture<WebTestFixture>

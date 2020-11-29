@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications
+namespace MaryShoppins.ApplicationCore.Specifications
 {
     public class CustomerOrdersWithItemsSpecification : Specification<Order>
     {

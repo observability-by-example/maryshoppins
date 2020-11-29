@@ -1,13 +1,13 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Exceptions;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Moq;
+﻿using Moq;
 using System;
 using Xunit;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Exceptions;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Services;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Services.BasketServiceTests
+namespace MaryShoppins.UnitTests.ApplicationCore.Services.BasketServiceTests
 {
     public class SetQuantities
     {

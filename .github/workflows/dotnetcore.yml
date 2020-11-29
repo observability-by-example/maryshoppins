@@ -1,4 +1,4 @@
-name: eShopOnWeb Build and Test
+name: MaryShoppins Build and Test
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -15,7 +15,7 @@ jobs:
         dotnet-version: 3.1.x
 
     - name: Build with dotnet
-      run: dotnet build ./eShopOnWeb.sln --configuration Release
+      run: dotnet build ./MaryShoppins.sln --configuration Release
     
     - name: Test with dotnet
-      run: dotnet test ./eShopOnWeb.sln --configuration Release
+      run: dotnet test ./MaryShoppins.sln --configuration Release

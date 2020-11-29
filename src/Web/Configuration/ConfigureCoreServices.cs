@@ -1,12 +1,12 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Logging;
-using Microsoft.eShopWeb.Infrastructure.Services;
+﻿using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Services;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.Infrastructure.Logging;
+using MaryShoppins.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.eShopWeb.Web.Configuration
+namespace MaryShoppins.Web.Configuration
 {
     public static class ConfigureCoreServices
     {

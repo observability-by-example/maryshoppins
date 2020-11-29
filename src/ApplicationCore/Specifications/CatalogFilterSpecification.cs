@@ -1,7 +1,7 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Entities;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Specifications
+namespace MaryShoppins.ApplicationCore.Specifications
 {
     public class CatalogFilterSpecification : Specification<CatalogItem>
     {

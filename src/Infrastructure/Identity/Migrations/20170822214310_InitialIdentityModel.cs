@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity.Migrations
+namespace MaryShoppins.Infrastructure.Identity.Migrations
 {
     public partial class InitialIdentityModel : Migration
     {

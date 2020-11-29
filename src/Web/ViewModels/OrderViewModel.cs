@@ -1,8 +1,8 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.Web.ViewModels
+namespace MaryShoppins.Web.ViewModels
 {
     public class OrderViewModel
     {

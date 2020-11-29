@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.ApplicationCore.Constants
+﻿namespace MaryShoppins.ApplicationCore.Constants
 {
     public class AuthorizationConstants
     {

@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
+﻿using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.UnitTests.Builders
+namespace MaryShoppins.UnitTests.Builders
 {
     public class AddressBuilder
     {

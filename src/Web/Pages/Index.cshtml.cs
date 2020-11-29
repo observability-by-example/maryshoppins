@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.eShopWeb.Web.Services;
-using Microsoft.eShopWeb.Web.ViewModels;
 using System.Threading.Tasks;
+using MaryShoppins.Web.Services;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Pages
+namespace MaryShoppins.Web.Pages
 {
     public class IndexModel : PageModel
     {

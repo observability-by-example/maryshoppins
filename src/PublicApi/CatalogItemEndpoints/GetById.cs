@@ -1,12 +1,12 @@
 ﻿using System.Threading;
 using Ardalis.ApiEndpoints;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints
+namespace MaryShoppins.PublicApi.CatalogItemEndpoints
 {
     public class GetById : BaseAsyncEndpoint<GetByIdCatalogItemRequest, GetByIdCatalogItemResponse>
     {

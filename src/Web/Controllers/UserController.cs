@@ -4,10 +4,10 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using BlazorShared.Authorization;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Web.Controllers
+namespace MaryShoppins.Web.Controllers
 {
     [Route("[controller]")]
     [ApiController]

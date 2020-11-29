@@ -1,10 +1,10 @@
-﻿using MediatR;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.Services;
+﻿using MaryShoppins.Web.Interfaces;
+using MaryShoppins.Web.Services;
+using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microsoft.eShopWeb.Web.Configuration
+namespace MaryShoppins.Web.Configuration
 {
     public static class ConfigureWebServices
     {

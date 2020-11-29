@@ -1,13 +1,13 @@
 ﻿using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using System.Linq;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Specifications;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Services
+namespace MaryShoppins.ApplicationCore.Services
 {
     public class OrderService : IOrderService
     {

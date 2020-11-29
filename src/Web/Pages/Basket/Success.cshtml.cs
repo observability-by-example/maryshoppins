@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Microsoft.eShopWeb.Web.Pages.Basket
+namespace MaryShoppins.Web.Pages.Basket
 {
     [Authorize]
     public class SuccessModel : PageModel

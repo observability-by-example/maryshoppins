@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
 
-namespace Microsoft.eShopWeb.Web
+namespace MaryShoppins.Web
 {
     public class Program
     {

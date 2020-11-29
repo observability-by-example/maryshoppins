@@ -1,14 +1,14 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.Pages.Basket;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Specifications;
+using MaryShoppins.Web.Interfaces;
+using MaryShoppins.Web.Pages.Basket;
 
-namespace Microsoft.eShopWeb.Web.Services
+namespace MaryShoppins.Web.Services
 {
     public class BasketViewModelService : IBasketViewModelService
     {

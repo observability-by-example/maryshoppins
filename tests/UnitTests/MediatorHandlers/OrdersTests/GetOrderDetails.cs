@@ -1,14 +1,14 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Features.OrderDetails;
 using Moq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Web.Features.OrderDetails;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests
+namespace MaryShoppins.UnitTests.MediatorHandlers.OrdersTests
 {
     public class GetOrderDetails
     {
@@ -27,7 +27,7 @@ namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests
         [Fact]
         public async Task NotBeNullIfOrderExists()
         {
-            var request = new eShopWeb.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 0);
+            var request = new MaryShoppins.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 0);
 
             var handler = new GetOrderDetailsHandler(_mockOrderRepository.Object);
 
@@ -39,7 +39,7 @@ namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests
         [Fact]
         public async Task BeNullIfOrderNotFound()
         {
-            var request = new eShopWeb.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 100);
+            var request = new MaryShoppins.Web.Features.OrderDetails.GetOrderDetails("SomeUserName", 100);
 
             var handler = new GetOrderDetailsHandler(_mockOrderRepository.Object);
 

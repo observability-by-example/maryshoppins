@@ -1,11 +1,11 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Collections.Generic;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Specifications;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Services
+namespace MaryShoppins.ApplicationCore.Services
 {
     public class BasketService : IBasketService
     {

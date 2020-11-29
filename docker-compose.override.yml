@@ -1,6 +1,6 @@
 version: '3.4'
 services:
- eshopwebmvc:
+  maryshoppinswebmvc:
    environment:
      - ASPNETCORE_ENVIRONMENT=Docker
      - ASPNETCORE_URLS=http://+:80
@@ -9,7 +9,7 @@ services:
    volumes:
      - ~/.aspnet/https:/root/.aspnet/https:ro
      - ~/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
- eshoppublicapi:
+  maryshoppinspublicapi:
    environment:
      - ASPNETCORE_ENVIRONMENT=Docker
      - ASPNETCORE_URLS=http://+:80

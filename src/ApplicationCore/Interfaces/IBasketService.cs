@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces
+namespace MaryShoppins.ApplicationCore.Interfaces
 {
     public interface IBasketService
     {

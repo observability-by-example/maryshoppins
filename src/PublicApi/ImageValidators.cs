@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Microsoft.eShopWeb.PublicApi
+namespace MaryShoppins.PublicApi
 {
     public static class ImageValidators
     {

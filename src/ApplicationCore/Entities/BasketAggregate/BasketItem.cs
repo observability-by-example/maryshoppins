@@ -1,7 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using System;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate
+namespace MaryShoppins.ApplicationCore.Entities.BasketAggregate
 {
     public class BasketItem : BaseEntity
     {

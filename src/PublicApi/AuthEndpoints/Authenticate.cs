@@ -1,13 +1,13 @@
 ﻿using Ardalis.ApiEndpoints;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Infrastructure.Identity;
 
-namespace Microsoft.eShopWeb.PublicApi.AuthEndpoints
+namespace MaryShoppins.PublicApi.AuthEndpoints
 {
     public class Authenticate : BaseAsyncEndpoint<AuthenticateRequest, AuthenticateResponse>
     {

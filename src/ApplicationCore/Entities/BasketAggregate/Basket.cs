@@ -1,8 +1,8 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate
+namespace MaryShoppins.ApplicationCore.Entities.BasketAggregate
 {
     public class Basket : BaseEntity, IAggregateRoot
     {

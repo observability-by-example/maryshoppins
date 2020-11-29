@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Exceptions
+namespace MaryShoppins.ApplicationCore.Exceptions
 {
     public class EmptyBasketOnCheckoutException : Exception
     {

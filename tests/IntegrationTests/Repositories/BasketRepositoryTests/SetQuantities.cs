@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Services;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.UnitTests.Builders;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.UnitTests.Builders;
 using Xunit;
 
-namespace Microsoft.eShopWeb.IntegrationTests.Repositories.BasketRepositoryTests
+namespace MaryShoppins.IntegrationTests.Repositories.BasketRepositoryTests
 {
     public class SetQuantities
     {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 using System.Reflection;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data
+namespace MaryShoppins.Infrastructure.Data
 {
 
     public class CatalogContext : DbContext

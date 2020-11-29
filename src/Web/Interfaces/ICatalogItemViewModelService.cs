@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.Web.ViewModels;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Interfaces
+namespace MaryShoppins.Web.Interfaces
 {
     public interface ICatalogItemViewModelService
     {

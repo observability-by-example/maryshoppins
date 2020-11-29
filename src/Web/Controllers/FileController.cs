@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
+using MaryShoppins.Web.ViewModels.File;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.Web.ViewModels.File;
 
-namespace Microsoft.eShopWeb.Web.Controllers
+namespace MaryShoppins.Web.Controllers
 {
     [Route("[controller]")]
     [ApiController]

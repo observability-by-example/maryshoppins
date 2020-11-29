@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Microsoft.eShopWeb.FunctionalTests</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>MaryShoppins.FunctionalTests</RootNamespace>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 

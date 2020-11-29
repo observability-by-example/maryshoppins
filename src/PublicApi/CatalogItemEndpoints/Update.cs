@@ -2,14 +2,14 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Swashbuckle.AspNetCore.Annotations;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints
+namespace MaryShoppins.PublicApi.CatalogItemEndpoints
 {
     [Authorize(Roles = BlazorShared.Authorization.Constants.Roles.ADMINISTRATORS, AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class Update : BaseAsyncEndpoint<UpdateCatalogItemRequest, UpdateCatalogItemResponse>

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Constants;
 
-namespace Microsoft.eShopWeb.Infrastructure.Identity
+namespace MaryShoppins.Infrastructure.Identity
 {
     public class AppIdentityDbContextSeed
     {

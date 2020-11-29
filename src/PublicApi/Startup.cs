@@ -4,27 +4,27 @@ using System.Text;
 using AutoMapper;
 using BlazorShared;
 using BlazorShared.Authorization;
+using MaryShoppins.ApplicationCore.Constants;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Services;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.Infrastructure.Identity;
+using MaryShoppins.Infrastructure.Logging;
+using MaryShoppins.Infrastructure.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Infrastructure.Logging;
-using Microsoft.eShopWeb.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
-namespace Microsoft.eShopWeb.PublicApi
+namespace MaryShoppins.PublicApi
 {
     public class Startup
     {
@@ -180,7 +180,7 @@ namespace Microsoft.eShopWeb.PublicApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data
+namespace MaryShoppins.Infrastructure.Data
 {
     public class CatalogContextSeed
     {

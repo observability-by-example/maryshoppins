@@ -6,7 +6,7 @@
     <ProjectGuid>{1FCBE191-34FE-4B2E-8915-CA81553958AD}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>eshopwebmvc</DockerServiceName>
+    <DockerServiceName>maryshoppinswebmvc</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

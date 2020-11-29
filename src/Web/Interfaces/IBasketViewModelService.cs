@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.Web.Pages.Basket;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MaryShoppins.Web.Pages.Basket;
 
-namespace Microsoft.eShopWeb.Web.Interfaces
+namespace MaryShoppins.Web.Interfaces
 {
     public interface IBasketViewModelService
     {

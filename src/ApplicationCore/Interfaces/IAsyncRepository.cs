@@ -1,9 +1,9 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces
+namespace MaryShoppins.ApplicationCore.Interfaces
 {
     public interface IAsyncRepository<T> where T : BaseEntity, IAggregateRoot
     {

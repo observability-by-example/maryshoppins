@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints
+namespace MaryShoppins.PublicApi.CatalogItemEndpoints
 {
     public class ListPagedCatalogItemResponse : BaseResponse
     {

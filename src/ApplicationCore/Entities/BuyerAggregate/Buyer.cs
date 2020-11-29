@@ -1,8 +1,8 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Ardalis.GuardClauses;
+﻿using Ardalis.GuardClauses;
 using System.Collections.Generic;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities.BuyerAggregate
+namespace MaryShoppins.ApplicationCore.Entities.BuyerAggregate
 {
     public class Buyer : BaseEntity, IAggregateRoot
     {

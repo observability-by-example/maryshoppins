@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.UnitTests.Builders
+namespace MaryShoppins.UnitTests.Builders
 {
     public class OrderBuilder
     {

@@ -1,10 +1,10 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Moq;
+﻿using Moq;
 using System.Collections.Generic;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
+namespace MaryShoppins.UnitTests.ApplicationCore.Specifications
 {
     public class CatalogItemsSpecification
     {
@@ -12,7 +12,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         public void MatchesSpecificCatalogItem()
         {
             var catalogItemIds = new int[] { 1 };
-            var spec = new eShopWeb.ApplicationCore.Specifications.CatalogItemsSpecification(catalogItemIds);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CatalogItemsSpecification(catalogItemIds);
 
             var result = GetTestCollection()
                 .AsQueryable()
@@ -26,7 +26,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         public void MatchesAllCatalogItems()
         {
             var catalogItemIds = new int[] { 1, 3 };
-            var spec = new eShopWeb.ApplicationCore.Specifications.CatalogItemsSpecification(catalogItemIds);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CatalogItemsSpecification(catalogItemIds);
 
             var result = GetTestCollection()
                 .AsQueryable()

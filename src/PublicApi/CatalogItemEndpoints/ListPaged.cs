@@ -1,16 +1,16 @@
 ﻿using Ardalis.ApiEndpoints;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Specifications;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints
+namespace MaryShoppins.PublicApi.CatalogItemEndpoints
 {
     public class ListPaged : BaseAsyncEndpoint<ListPagedCatalogItemRequest, ListPagedCatalogItemResponse>
     {

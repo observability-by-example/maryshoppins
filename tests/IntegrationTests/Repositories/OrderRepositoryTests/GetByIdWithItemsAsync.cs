@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.UnitTests.Builders;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.UnitTests.Builders;
 using Xunit;
 
-namespace Microsoft.eShopWeb.IntegrationTests.Repositories.OrderRepositoryTests
+namespace MaryShoppins.IntegrationTests.Repositories.OrderRepositoryTests
 {
     public class GetByIdWithItemsAsync
     {

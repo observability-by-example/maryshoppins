@@ -1,12 +1,12 @@
-﻿using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using Microsoft.eShopWeb.UnitTests.Builders;
 using Xunit;
 using Xunit.Abstractions;
 using System.Threading.Tasks;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.UnitTests.Builders;
 
-namespace Microsoft.eShopWeb.IntegrationTests.Repositories.OrderRepositoryTests
+namespace MaryShoppins.IntegrationTests.Repositories.OrderRepositoryTests
 {
     public class GetById
     {

@@ -1,12 +1,12 @@
-﻿using Microsoft.eShopWeb.FunctionalTests.PublicApi;
-using Microsoft.eShopWeb.PublicApi.CatalogItemEndpoints;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MaryShoppins.FunctionalTests.PublicApi;
+using MaryShoppins.PublicApi.CatalogItemEndpoints;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers
+namespace MaryShoppins.FunctionalTests.Web.Controllers
 {
     [Collection("Sequential")]
     public class GetByIdEndpoint : IClassFixture<ApiTestFixture>

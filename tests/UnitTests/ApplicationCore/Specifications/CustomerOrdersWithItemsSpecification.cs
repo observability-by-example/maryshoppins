@@ -1,9 +1,9 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
+namespace MaryShoppins.UnitTests.ApplicationCore.Specifications
 {
     public class CustomerOrdersWithItemsSpecification
     {
@@ -13,7 +13,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         [Fact]
         public void ReturnsOrderWithOrderedItem()
         {
-            var spec = new eShopWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
 
             var result = GetTestCollection()
                 .AsQueryable()
@@ -28,7 +28,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         [Fact]
         public void ReturnsAllOrderWithAllOrderedItem()
         {
-            var spec = new eShopWeb.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CustomerOrdersWithItemsSpecification(_buyerId);
 
             var result = GetTestCollection()
                 .AsQueryable()

@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+﻿using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities
+namespace MaryShoppins.ApplicationCore.Entities
 {
     public class CatalogBrand : BaseEntity, IAggregateRoot
     {

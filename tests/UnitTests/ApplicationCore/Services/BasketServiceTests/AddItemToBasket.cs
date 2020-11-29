@@ -1,12 +1,12 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Services;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Moq;
+﻿using Moq;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Services;
+using MaryShoppins.ApplicationCore.Specifications;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Services.BasketServiceTests
+namespace MaryShoppins.UnitTests.ApplicationCore.Services.BasketServiceTests
 {
     public class AddItemToBasket
     {

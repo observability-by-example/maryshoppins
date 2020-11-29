@@ -1,10 +1,10 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Interfaces;
-using Microsoft.eShopWeb.Web.ViewModels;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Web.Interfaces;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Services
+namespace MaryShoppins.Web.Services
 {
     public class CatalogItemViewModelService : ICatalogItemViewModelService
     {

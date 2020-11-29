@@ -1,11 +1,11 @@
-﻿using Microsoft.eShopWeb.FunctionalTests.PublicApi;
-using Microsoft.eShopWeb.Web.ViewModels;
-using System.Linq;
+﻿using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using MaryShoppins.FunctionalTests.PublicApi;
+using MaryShoppins.Web.ViewModels;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers
+namespace MaryShoppins.FunctionalTests.Web.Controllers
 {
     [Collection("Sequential")]
     public class ApiCatalogControllerList : IClassFixture<ApiTestFixture>

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.Web.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Services
+namespace MaryShoppins.Web.Services
 {
     public interface ICatalogViewModelService
     {

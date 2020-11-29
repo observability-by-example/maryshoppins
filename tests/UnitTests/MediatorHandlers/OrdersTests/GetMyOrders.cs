@@ -1,14 +1,14 @@
 ﻿using Ardalis.Specification;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Web.Features.MyOrders;
 using Moq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Web.Features.MyOrders;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests
+namespace MaryShoppins.UnitTests.MediatorHandlers.OrdersTests
 {
     public class GetMyOrders
     {
@@ -27,7 +27,7 @@ namespace Microsoft.eShopWeb.UnitTests.MediatorHandlers.OrdersTests
         [Fact]
         public async Task NotReturnNullIfOrdersArePresent()
         {
-            var request = new eShopWeb.Web.Features.MyOrders.GetMyOrders("SomeUserName");
+            var request = new MaryShoppins.Web.Features.MyOrders.GetMyOrders("SomeUserName");
 
             var handler = new GetMyOrdersHandler(_mockOrderRepository.Object);
 

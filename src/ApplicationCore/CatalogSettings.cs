@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb
+﻿namespace MaryShoppins
 {
     public class CatalogSettings
     {

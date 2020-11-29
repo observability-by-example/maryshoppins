@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.Web.ViewModels.Manage
+﻿namespace MaryShoppins.Web.ViewModels.Manage
 {
     public class GenerateRecoveryCodesViewModel
     {

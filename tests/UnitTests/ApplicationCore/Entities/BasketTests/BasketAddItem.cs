@@ -1,9 +1,9 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using System;
+﻿using System;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Entities.BasketTests
+namespace MaryShoppins.UnitTests.ApplicationCore.Entities.BasketTests
 {
     public class BasketAddItem
     {

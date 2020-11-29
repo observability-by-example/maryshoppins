@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.Web.ViewModels
+﻿namespace MaryShoppins.Web.ViewModels
 {
     public class BasketComponentViewModel
     {

@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Interfaces
+namespace MaryShoppins.ApplicationCore.Interfaces
 {
 
     public interface IOrderRepository : IAsyncRepository<Order>

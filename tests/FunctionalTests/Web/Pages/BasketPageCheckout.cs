@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.eShopWeb.FunctionalTests.Web;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using MaryShoppins.FunctionalTests.Web;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages
+namespace MaryShoppins.FunctionalTests.WebRazorPages
 {
     [Collection("Sequential")]
     public class BasketPageCheckout : IClassFixture<WebTestFixture>

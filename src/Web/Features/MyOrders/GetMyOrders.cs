@@ -1,8 +1,8 @@
 ﻿using MediatR;
-using Microsoft.eShopWeb.Web.ViewModels;
 using System.Collections.Generic;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Features.MyOrders
+namespace MaryShoppins.Web.Features.MyOrders
 {
     public class GetMyOrders : IRequest<IEnumerable<OrderViewModel>>
     {

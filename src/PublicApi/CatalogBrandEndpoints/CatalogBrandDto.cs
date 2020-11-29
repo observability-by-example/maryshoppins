@@ -1,4 +1,4 @@
-﻿namespace Microsoft.eShopWeb.PublicApi.CatalogBrandEndpoints
+﻿namespace MaryShoppins.PublicApi.CatalogBrandEndpoints
 {
     public class CatalogBrandDto
     {

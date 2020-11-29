@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.eShopWeb.PublicApi
+namespace MaryShoppins.PublicApi
 {
     /// <summary>
     /// Base class used by API requests

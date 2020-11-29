@@ -4,10 +4,10 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Data;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Infrastructure.Data;
 
-namespace Microsoft.eShopWeb.Infrastructure.Services
+namespace MaryShoppins.Infrastructure.Services
 {
     public class WebFileSystem: IFileSystem
     {

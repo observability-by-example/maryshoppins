@@ -1,6 +1,6 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Interfaces;
+﻿using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Services
+namespace MaryShoppins.ApplicationCore.Services
 {
     public class UriComposer : IUriComposer
     {

@@ -1,12 +1,12 @@
 ﻿using MediatR;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Microsoft.eShopWeb.Web.ViewModels;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.ApplicationCore.Specifications;
+using MaryShoppins.Web.ViewModels;
 
-namespace Microsoft.eShopWeb.Web.Features.OrderDetails
+namespace MaryShoppins.Web.Features.OrderDetails
 {
     public class GetOrderDetailsHandler : IRequestHandler<GetOrderDetails, OrderViewModel>
     {

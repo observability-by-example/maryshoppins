@@ -2,14 +2,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.PublicApi;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.Infrastructure.Identity;
+using MaryShoppins.PublicApi;
 
-namespace Microsoft.eShopWeb.FunctionalTests.PublicApi
+namespace MaryShoppins.FunctionalTests.PublicApi
 {
     public class ApiTestFixture : WebApplicationFactory<Startup>
     {

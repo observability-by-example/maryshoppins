@@ -1,12 +1,12 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Specifications;
-using Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 using Moq;
 using Ardalis.Specification.EntityFrameworkCore;
+using MaryShoppins.ApplicationCore.Entities.BasketAggregate;
+using MaryShoppins.ApplicationCore.Specifications;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
+namespace MaryShoppins.UnitTests.ApplicationCore.Specifications
 {
     public class BasketWithItems
     {

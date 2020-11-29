@@ -1,16 +1,16 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
+namespace MaryShoppins.UnitTests.ApplicationCore.Specifications
 {
     public class CatalogFilterPaginatedSpecification
     {
         [Fact]
         public void ReturnsAllCatalogItems()
         {
-            var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, null, null);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, null, null);
 
             var result = GetTestCollection()
                 .AsQueryable()
@@ -23,7 +23,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         [Fact]
         public void Returns2CatalogItemsWithSameBrandAndTypeId()
         {
-            var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, 1, 1);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CatalogFilterPaginatedSpecification(0, 10, 1, 1);
 
             var result = GetTestCollection()
                 .AsQueryable()

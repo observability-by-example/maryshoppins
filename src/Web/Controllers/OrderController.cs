@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.Web.Features.MyOrders;
-using Microsoft.eShopWeb.Web.Features.OrderDetails;
 using System.Threading.Tasks;
+using MaryShoppins.Web.Features.MyOrders;
+using MaryShoppins.Web.Features.OrderDetails;
 
-namespace Microsoft.eShopWeb.Web.Controllers
+namespace MaryShoppins.Web.Controllers
 {
     [ApiExplorerSettings(IgnoreApi = true)]
     [Authorize] // Controllers that mainly require Authorization still use Controller/View; other pages use Pages

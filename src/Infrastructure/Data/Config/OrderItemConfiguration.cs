@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Config
+namespace MaryShoppins.Infrastructure.Data.Config
 {
     public class OrderItemConfiguration : IEntityTypeConfiguration<OrderItem>
     {

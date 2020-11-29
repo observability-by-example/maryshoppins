@@ -1,14 +1,14 @@
 ﻿using Ardalis.ApiEndpoints;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Entities;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Entities;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.PublicApi.CatalogBrandEndpoints
+namespace MaryShoppins.PublicApi.CatalogBrandEndpoints
 {
     public class List : BaseAsyncEndpoint<ListCatalogBrandsResponse>
     {

@@ -1,9 +1,9 @@
-﻿using Microsoft.eShopWeb.FunctionalTests.Web;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
+using MaryShoppins.FunctionalTests.Web;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages
+namespace MaryShoppins.FunctionalTests.WebRazorPages
 {
     [Collection("Sequential")]
     public class HomePageOnGet : IClassFixture<WebTestFixture>

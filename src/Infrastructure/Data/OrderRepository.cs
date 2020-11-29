@@ -1,10 +1,10 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities.OrderAggregate;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using Ardalis.Specification;
+using MaryShoppins.ApplicationCore.Entities.OrderAggregate;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data
+namespace MaryShoppins.Infrastructure.Data
 {
     public class OrderRepository : EfRepository<Order>, IOrderRepository
     {

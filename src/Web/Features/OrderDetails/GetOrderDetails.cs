@@ -1,7 +1,7 @@
-﻿using MediatR;
-using Microsoft.eShopWeb.Web.ViewModels;
+﻿using MaryShoppins.Web.ViewModels;
+using MediatR;
 
-namespace Microsoft.eShopWeb.Web.Features.OrderDetails
+namespace MaryShoppins.Web.Features.OrderDetails
 {
     public class GetOrderDetails : IRequest<OrderViewModel>
     {

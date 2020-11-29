@@ -2,17 +2,17 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Web.Services;
-using Microsoft.eShopWeb.Web.ViewModels.Manage;
+using MaryShoppins.Web.Services;
 using System;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Infrastructure.Identity;
+using MaryShoppins.Web.ViewModels.Manage;
 
-namespace Microsoft.eShopWeb.Web.Controllers
+namespace MaryShoppins.Web.Controllers
 {
     [ApiExplorerSettings(IgnoreApi = true)]
     [Authorize] // Controllers that mainly require Authorization still use Controller/View; other pages use Pages
@@ -492,7 +492,7 @@ namespace Microsoft.eShopWeb.Web.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("eShopOnWeb"),
+                _urlEncoder.Encode("MaryShoppins"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

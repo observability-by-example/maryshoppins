@@ -6,9 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.eShopWeb.Infrastructure.Data;
-using Microsoft.eShopWeb.Infrastructure.Identity;
-using Microsoft.eShopWeb.Web.Configuration;
+using MaryShoppins.Web.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -24,10 +22,12 @@ using BlazorAdmin.Services;
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using BlazorShared;
+using MaryShoppins.ApplicationCore.Interfaces;
+using MaryShoppins.Infrastructure.Data;
+using MaryShoppins.Infrastructure.Identity;
 
-namespace Microsoft.eShopWeb.Web
+namespace MaryShoppins.Web
 {
     public class Startup
     {
@@ -52,7 +52,7 @@ namespace Microsoft.eShopWeb.Web
         public void ConfigureDockerServices(IServiceCollection services)
         {
             services.AddDataProtection()
-                .SetApplicationName("eshopwebmvc")
+                .SetApplicationName("maryshoppinswebmvc")
                 .PersistKeysToFileSystem(new DirectoryInfo(@"./"));
 
             ConfigureDevelopmentServices(services);
@@ -200,7 +200,7 @@ namespace Microsoft.eShopWeb.Web
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
             app.UseRouting();

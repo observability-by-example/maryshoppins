@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Microsoft.eShopWeb.Infrastructure.Data.Migrations
+namespace MaryShoppins.Infrastructure.Data.Migrations
 {
     public partial class Post30Upgrade : Migration
     {

@@ -1,9 +1,9 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using MaryShoppins.ApplicationCore.Entities;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
+namespace MaryShoppins.UnitTests.ApplicationCore.Specifications
 {
     public class CatalogFilterSpecification
     {
@@ -17,7 +17,7 @@ namespace Microsoft.eShopWeb.UnitTests.ApplicationCore.Specifications
         [InlineData(2, 3, 0)]
         public void MatchesExpectedNumberOfItems(int? brandId, int? typeId, int expectedCount)
         {
-            var spec = new eShopWeb.ApplicationCore.Specifications.CatalogFilterSpecification(brandId, typeId);
+            var spec = new MaryShoppins.ApplicationCore.Specifications.CatalogFilterSpecification(brandId, typeId);
 
             var result = GetTestItemCollection()
                 .AsQueryable()

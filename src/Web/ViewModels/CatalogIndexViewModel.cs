@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 
-namespace Microsoft.eShopWeb.Web.ViewModels
+namespace MaryShoppins.Web.ViewModels
 {
     public class CatalogIndexViewModel
     {

@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using MaryShoppins.Web.Extensions;
+using MaryShoppins.Web.ViewModels;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.eShopWeb.Web.ViewModels;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.eShopWeb.Web.Extensions;
 
-namespace Microsoft.eShopWeb.Web.Services
+namespace MaryShoppins.Web.Services
 {
     public class CachedCatalogViewModelService : ICatalogViewModelService
     {

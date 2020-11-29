@@ -1,7 +1,7 @@
-﻿using Microsoft.eShopWeb.Web.Extensions;
+﻿using MaryShoppins.Web.Extensions;
 using Xunit;
 
-namespace Microsoft.eShopWeb.UnitTests.Web.Extensions.CacheHelpersTests
+namespace MaryShoppins.UnitTests.Web.Extensions.CacheHelpersTests
 {
     public class GenerateTypesCacheKey
     {

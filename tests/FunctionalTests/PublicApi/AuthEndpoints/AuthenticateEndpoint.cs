@@ -1,13 +1,13 @@
-﻿using Microsoft.eShopWeb.ApplicationCore.Constants;
-using Microsoft.eShopWeb.FunctionalTests.PublicApi;
-using Microsoft.eShopWeb.PublicApi.AuthEndpoints;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MaryShoppins.ApplicationCore.Constants;
+using MaryShoppins.FunctionalTests.PublicApi;
+using MaryShoppins.PublicApi.AuthEndpoints;
 using Xunit;
 
-namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers
+namespace MaryShoppins.FunctionalTests.Web.Controllers
 {
     [Collection("Sequential")]
     public class AuthenticateEndpoint : IClassFixture<ApiTestFixture>

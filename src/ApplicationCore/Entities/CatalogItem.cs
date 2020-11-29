@@ -1,9 +1,9 @@
 ﻿using System;
 using Ardalis.GuardClauses;
-using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 using System.Collections.Generic;
+using MaryShoppins.ApplicationCore.Interfaces;
 
-namespace Microsoft.eShopWeb.ApplicationCore.Entities
+namespace MaryShoppins.ApplicationCore.Entities
 {
 
 

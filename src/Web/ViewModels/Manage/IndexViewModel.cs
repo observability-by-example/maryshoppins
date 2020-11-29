@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Microsoft.eShopWeb.Web.ViewModels.Manage
+namespace MaryShoppins.Web.ViewModels.Manage
 {
     public class IndexViewModel
     {
