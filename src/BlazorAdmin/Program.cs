@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace BlazorAdmin
 {
@@ -16,6 +17,13 @@ namespace BlazorAdmin
     {
         public static async Task Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .MinimumLevel.Information()
+                .WriteTo.Console()
+                .WriteTo.File(new Serilog.Formatting.Compact.RenderedCompactJsonFormatter(), "../../logs/blazoradmin.log")
+                .CreateLogger();
+
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("admin");
 

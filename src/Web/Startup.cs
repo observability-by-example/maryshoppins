@@ -188,7 +188,7 @@ namespace MaryShoppins.Web
                 });
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // app.UseDeveloperExceptionPage();
                 app.UseShowAllServicesMiddleware();
                 app.UseDatabaseErrorPage();
                 app.UseWebAssemblyDebugging();

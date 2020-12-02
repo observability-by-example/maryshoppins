@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using MaryShoppins.Infrastructure.Data;
 using MaryShoppins.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
+using Serilog;
+using Serilog.Formatting.Compact;
 
 namespace MaryShoppins.Web
 {
@@ -15,6 +17,16 @@ namespace MaryShoppins.Web
     {
         public static async Task Main(string[] args)
         {
+            // We're using Serilog for logging
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .MinimumLevel.Information()
+                .WriteTo.Console()
+                .WriteTo.File("../../logs/web.log")
+                // Remove the above line and replace it with the one below for structured logging
+                // .WriteTo.File(new RenderedCompactJsonFormatter(), "../../logs/web.log")
+                .CreateLogger();
+            
             var host = CreateHostBuilder(args)
                         .Build();
 
@@ -43,6 +55,11 @@ namespace MaryShoppins.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(logging =>
+                {
+                    logging.ClearProviders();
+                })
+                .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

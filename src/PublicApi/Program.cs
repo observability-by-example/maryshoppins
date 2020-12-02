@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using MaryShoppins.Infrastructure.Data;
 using MaryShoppins.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
+using Serilog;
 
 namespace MaryShoppins.PublicApi
 {
@@ -15,6 +16,13 @@ namespace MaryShoppins.PublicApi
     {
         public static async Task Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .MinimumLevel.Information()
+                .WriteTo.Console()
+                .WriteTo.File(new Serilog.Formatting.Compact.RenderedCompactJsonFormatter(), "../../logs/publicapi.log")
+                .CreateLogger();
+
             var host = CreateHostBuilder(args)
                         .Build();
 

@@ -4,6 +4,8 @@
 .gitignore
 .vs
 .vscode
+.idea/
 */bin
 */obj
 **/.toolstarget
+logs/

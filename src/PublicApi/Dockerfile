@@ -20,6 +20,14 @@ FROM build AS publish
 RUN dotnet publish "./PublicApi.csproj" -c Release -o /app/publish
 
 FROM base AS final
+
+# Add Filebeat
+RUN apt-get update && apt-get install curl -y && \
+ curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.0-amd64.deb
+RUN dpkg -i filebeat-7.10.0-amd64.deb
+ADD filebeat.yml /etc/filebeat/filebeat.yml
+
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "PublicApi.dll"]
+
+CMD bash -c "nohup filebeat -c filebeat.yml &" && dotnet PublicApi.dll"]
