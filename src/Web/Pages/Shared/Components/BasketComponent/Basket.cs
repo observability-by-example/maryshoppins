@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace MaryShoppins.Web.Pages.Shared.Components.BasketComponent
         {
             if (_signInManager.IsSignedIn(HttpContext.User))
             {
+                throw new ApplicationException("Hahahahahah gotcha!");
                 return await _basketService.GetOrCreateBasketForUser(User.Identity.Name);
             }
             string anonymousId = GetBasketIdFromCookie();
