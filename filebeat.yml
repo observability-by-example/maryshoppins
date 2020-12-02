@@ -7,7 +7,7 @@ filebeat.inputs:
   # See https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-log.html
   - type: log
     # Change this👇 to true so Filebeat to pick up these logs
-    enabled: true
+    enabled: false
     paths:
     - /logs/*
     # Tell Filebeat to parse our logs as JSON and save as fields
