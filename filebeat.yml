@@ -7,15 +7,13 @@ filebeat.inputs:
   # See https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-log.html
   - type: log
     # Change this👇 to true so Filebeat to pick up these logs
-    enabled: false
+    enabled: true
     paths:
     - /logs/*
     # Tell Filebeat to parse our logs as JSON and save as fields
     json.keys_under_root: true
-    
 
-# Automatically set up Filebeat's Kibana dashboards when you start Filebeat
-setup.dashboards.enabled: true
+setup.dashboards.enabled: false
 setup.kibana.host: "host.docker.internal:5601"
 
 # Configure ES output

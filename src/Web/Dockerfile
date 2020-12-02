@@ -24,6 +24,8 @@ RUN apt-get update && apt-get install curl -y && \
  curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.0-amd64.deb
 RUN dpkg -i filebeat-7.10.0-amd64.deb
 ADD filebeat.yml /etc/filebeat/filebeat.yml
+# Set up Filebeat's Kibana dashboards
+RUN filebeat -c filebeat.yml setup
 
 WORKDIR /app
 COPY --from=build /app/src/Web/out ./

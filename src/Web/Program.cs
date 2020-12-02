@@ -22,9 +22,7 @@ namespace MaryShoppins.Web
                 .Enrich.FromLogContext()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
-                .WriteTo.File("../../logs/web.log")
-                // Remove the above line and replace it with the one below for structured logging
-                // .WriteTo.File(new RenderedCompactJsonFormatter(), "../../logs/web.log")
+                .WriteTo.File(new RenderedCompactJsonFormatter(), "../../logs/web.log")
                 .CreateLogger();
             
             var host = CreateHostBuilder(args)
