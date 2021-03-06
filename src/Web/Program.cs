@@ -7,9 +7,7 @@ using System;
 using System.Threading.Tasks;
 using MaryShoppins.Infrastructure.Data;
 using MaryShoppins.Infrastructure.Identity;
-using Microsoft.Extensions.Configuration;
 using Serilog;
-using Serilog.Formatting.Compact;
 
 namespace MaryShoppins.Web
 {
@@ -17,14 +15,11 @@ namespace MaryShoppins.Web
     {
         public static async Task Main(string[] args)
         {
-            // We're using Serilog for logging
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
-                .WriteTo.File("../../logs/web.log")
-                // Remove the above line and replace it with the one below for structured logging
-                // .WriteTo.File(new RenderedCompactJsonFormatter(), "../../logs/web.log")
+                .WriteTo.File(new Serilog.Formatting.Compact.RenderedCompactJsonFormatter(), "../../logs/web.log")
                 .CreateLogger();
             
             var host = CreateHostBuilder(args)
